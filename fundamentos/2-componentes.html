@@ -13,6 +13,26 @@
     <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
     <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
 
-    <script type="text/babel"></script>
+    <script type="text/babel">
+      function Button() {
+        return (
+          <button className="px-3 py-2 bg-purple-500 rounded text-white">
+            Botão
+          </button>
+        );
+      }
+
+      function App() {
+        return (
+          <main className="flex gap-2 p-3">
+            <Button />
+            <Button />
+            <Button />
+          </main>
+        );
+      }
+
+      ReactDOM.createRoot(document.getElementById("root")).render(<App />);
+    </script>
   </body>
 </html>
